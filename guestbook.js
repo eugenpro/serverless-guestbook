@@ -4,6 +4,9 @@
 require('dotenv').config();
 
 const apiUrl = process.env.API_URL;
+
+console.log('Api Url', apiUrl)
+
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
