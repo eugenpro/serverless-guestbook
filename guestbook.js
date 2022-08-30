@@ -1,7 +1,9 @@
 /**
  * Web application
  */
-const apiUrl = '';
+require('dotenv').config();
+
+const apiUrl = process.env.API_URL;
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
